@@ -136,7 +136,7 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://github.com/monsterrulex/Monster/blob/main/Approval.txt').text
+    httpCaht = requests.get('https://github.com/monsterrulex/monster0.2/blob/main/approval.txt').text
     if id in httpCaht:
       print("\33[1;32mWelcome-----")
       msg = str(os.geteuid())
